@@ -1,0 +1,39 @@
+h1 {
+    @include heading-1;
+}
+
+h2 {
+    @include heading-2;
+}
+
+h3 {
+    @include heading-3;
+}
+
+h4 {
+    @include heading-4;
+}
+
+p {
+    @include paragraph;
+}
+
+.display-1 {
+    @include display-1;
+}
+
+.display-2 {
+    @include display-2;
+}
+
+.display-3 {
+    @include display-3;
+}
+
+.display-4 {
+    @include display-4;
+}
+
+.lead {
+    @include lead;
+}
