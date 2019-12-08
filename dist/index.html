@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>JensTech</title>
+    <title>Jenstech</title>
 </head>
 <body>
-    <header>
-        <!-- <figure>
-            <img src="logo.svg" alt="JensTech official logo" />
-        </figure> -->
-        <h3>JensTech Logo</h3>
-        <nav>
-            <p>Our purpose</p>
-            <p>Services</p>
-            <p>The process</p>
-            <p>Contact</p>
-        </nav>
+    <header class="navbar">
+        <div class="navbar__container">
+            <!-- <figure>
+                <img src="logo.svg" alt="Jenstech official logo" />
+            </figure> -->
+            <h3 class="navbar__logo">Jenstech Logo</h3>
+            <nav class="navbar__nav">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="#our-purpose">Our purpose</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#the-process">The process</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="section hero">
-            <div class="section__padding">
-                <h1 class="display-2">Helping small businesses get noticed online</h1>
-                <hr>
-                <h2 class="lead">We build digital assets that bring your business and customers value.</h2>
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title display-2">Helping small businesses get noticed online</h1>
+                <hr class="hero__line">
+                <h2 class="hero__subtitle lead">We build digital assets that bring your business and customers value.</h2>
                 <button class="btn">Let's talk</button>
             </div>
         </section>
 
-        <section class="section purpose">
+        <section id="our-purpose" class="section purpose">
             <div class="section__padding section__container">
                 <div class="purpose__content">
                     <h3>Our purpose</h3>
@@ -48,7 +60,7 @@
             </div>
         </section>
 
-        <section class="section services">
+        <section id="services" class="section services">
             <div class="section__padding section__container">
                 <div class="service__image">
                     <figure>
@@ -63,7 +75,7 @@
             </div>
         </section>
 
-        <section class="section process">
+        <section id="the-process" class="section process">
             <div class="section__padding section__container">
                 <div class="process__content">
                     <h3>The process</h3>
@@ -79,9 +91,11 @@
         </section>
     </main>
 
-    <footer>
-        <h3>Let's keep talking and see if we're a good match.</h3>
-        <p>Fill out the form below and we'll get back to you. We promise if you go 50% we'll go the other 50%.</p>
+    <footer id="contact" class="section">
+        <div class="section__padding section__container">
+            <h3>Let's keep talking and see if we're a good match.</h3>
+            <p>Fill out the form below and we'll get back to you. We promise if you go 50% we'll go the other 50%.</p>
+        </div>
     </footer>
 
     <!-- <script src="bundle.js"></script> -->

@@ -1,0 +1,33 @@
+.navbar {
+    &__container {
+        @include container-padding;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        align-self: center;
+    }
+
+    &__nav {
+        display: flex;
+        align-self: center;
+    }
+}
+
+.nav {
+    display: flex;
+
+    &__item {
+        padding: 20px 0;
+        margin: 0 12px;
+
+        &:first-child {
+            margin: 0 12px 0 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 12px;
+        }
+    }
+}
