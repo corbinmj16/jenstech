@@ -139,6 +139,16 @@ p {
   border-color: #ff6452;
 }
 
+.section__container {
+  display: flex;
+  flex-direction: row;
+}
+.section__padding {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 header {
   background: lightblue;
 }
