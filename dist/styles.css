@@ -168,6 +168,9 @@ p {
   margin: 0 0 0 12px;
 }
 
+.section {
+  position: relative;
+}
 .section__container {
   display: flex;
   flex-direction: row;
@@ -177,13 +180,50 @@ p {
   padding: 0 20px;
   margin: 0 auto;
 }
+.section__image {
+  max-width: 400px;
+  width: 100%;
+}
+
+.purpose,
+.services,
+.process {
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+.purpose__svg,
+.services__svg,
+.process__svg {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+}
+
+.services {
+  background-color: #F7F5EF;
+}
+.services__svg {
+  transform: scaleX(-1);
+}
+
+.process {
+  margin-bottom: 0;
+}
+.process__svg {
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.footer {
+  background-color: #191A1E;
+  padding: 50px 0;
+  color: #fff;
+}
 
 .hero {
   background-color: #F7F5EF;
   padding: 120px 0;
 }
 .hero__container {
-  width: 100%;
   padding: 0 20px;
   max-width: 1140px;
   margin: 0 auto;

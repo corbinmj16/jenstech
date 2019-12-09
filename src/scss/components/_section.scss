@@ -1,4 +1,6 @@
 .section {
+    position: relative;
+
     &__container {
         display: flex;
         flex-direction: row;
@@ -6,5 +8,39 @@
 
     &__padding {
         @include container-padding;
+    }
+
+    &__image {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+.purpose,
+.services,
+.process {
+    padding: 100px 0;
+    margin-bottom: 100px;
+
+    &__svg {
+        position: absolute;
+        width: 100%;
+        top: -100px;
+    }
+}
+
+.services {
+    background-color: $color-primary;
+
+    &__svg {
+        transform: scaleX(-1);
+    }
+}
+
+.process {
+    margin-bottom: 0;
+
+    &__svg {
+        transform: scaleY(-1) scaleX(-1);
     }
 }
