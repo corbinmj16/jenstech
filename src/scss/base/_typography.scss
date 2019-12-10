@@ -53,16 +53,17 @@ p {
 
 .btn {
     font-size: .9rem;
-    color:#170f18;
+    color: $color-dark;
     background-color: $color-accent;
     border-color: $color-accent;
     padding: .75rem 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: all .15s ease-in-out;
 
     &:hover {
         color:#170f18;
-        background-color:#ff705f;
-        border-color:#ff6452;
+        background-color: lighten($color-accent, 10%);
+        border-color: lighten($color-accent, 10%);
     }
 }

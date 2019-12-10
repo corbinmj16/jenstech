@@ -3,6 +3,7 @@
         @include container-padding;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__logo {
@@ -10,13 +11,52 @@
     }
 
     &__nav {
+        position: fixed;
         display: flex;
+        flex-direction: column;
         align-self: center;
+        top: 0;
+        left: 0;
+        background-color: $color-primary;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        visibility: hidden;
+
+        &.is-open {
+            visibility: visible;
+        }
+
+        @media only screen and (min-width: 900px) {
+            position: relative;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            z-index: 1;
+            visibility: visible;
+        }
     }
 }
 
 .nav {
     display: flex;
+
+    .is-open & {
+        flex-direction: column;
+
+        &__item {
+            padding: 0;
+            margin: 0;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
 
     &__item {
         padding: 20px 0;
@@ -29,5 +69,41 @@
         &:last-child {
             margin: 0 0 0 12px;
         }
+    }
+}
+
+.navbar-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: block;
+
+    @media only screen and (min-width: 900px) {
+        display: none;
+    }
+
+    &__top-line,
+    &__middle-line,
+    &__bottom-line {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $color-dark;
+    }
+
+    &__top-line {
+        top: 7px;
+    }
+    &__middle-line {
+        top: 14px;
+    }
+    &__bottom-line {
+        top: 21px;
+    }
+
+    &.is-close {
+        z-index: 101;
     }
 }

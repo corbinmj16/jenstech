@@ -14,7 +14,12 @@
                 <img src="logo.svg" alt="Jenstech official logo" />
             </figure> -->
             <h3 class="navbar__logo">Jenstech Logo</h3>
-            <nav class="navbar__nav">
+            <button type="button" id="js-navbar-icon" class="navbar-icon">
+                <span class="navbar-icon__top-line"></span>
+                <span class="navbar-icon__middle-line"></span>
+                <span class="navbar-icon__bottom-line"></span>
+            </button>
+            <nav id="js-navbar-nav" class="navbar__nav">
                 <ul class="nav">
                     <li class="nav__item">
                         <a href="#our-purpose">Our purpose</a>
@@ -113,5 +118,13 @@
     </footer>
 
     <!-- <script src="bundle.js"></script> -->
+    <script>
+        const nav = document.getElementById('js-navbar-nav');
+        const menuIcon = document.getElementById('js-navbar-icon');
+        menuIcon.addEventListener('click', () => {
+            menuIcon.classList.toggle('is-close');
+            nav.classList.toggle('is-open');
+        });
+    </script>
 </body>
 </html>
