@@ -1,9 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600|Playfair+Display&display=swap');
+
+$font-fira: 'Fira Sans', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+
+@mixin display-1 {
+    font-family: $font-fira;
+    font-size: 3rem;
+
+    @include mq-for-desktop {
+        font-size: 6rem;
+    }
+}
+
+@mixin display-2 {
+    font-family: $font-fira;
+    font-size: 2.75rem;
+
+    @include mq-for-desktop {
+        font-size: 5.5rem;
+    }
+}
+
+@mixin display-3 {
+    font-family: $font-fira;
+    font-size: 2.5rem;
+
+    @include mq-for-desktop {
+        font-size: 4.5rem;
+    }
+}
+
+@mixin display-4 {
+    font-family: $font-fira;
+    font-size: 2.25rem;
+
+    @include mq-for-desktop {
+        font-size: 3.5rem;
+    }
+}
+
+@mixin heading-1 {
+    font-family: $font-playfair;
+    font-size: 2.75rem;
+    line-height: 1.15;
+
+    @include mq-for-desktop {
+        font-size: 3rem;
+    }
+}
+
+@mixin heading-2 {
+    font-family: $font-playfair;
+    font-size: 2rem;
+    line-height: 1.2;
+
+    @include mq-for-desktop {
+        font-size: 2.25rem;
+    }
+}
+
+@mixin heading-3 {
+    font-family: $font-playfair;
+    font-size: 1.75rem;
+    line-height: 1.3;
+}
+
+@mixin heading-4 {
+    font-family: $font-playfair;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+@mixin lead {
+    font-family: $font-playfair;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+@mixin paragraph {
+    font-family: $font-fira;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 h1 {
     @include heading-1;
+    
 }
 
 h2 {
     @include heading-2;
+    
 }
 
 h3 {
@@ -16,6 +103,7 @@ h4 {
 
 p {
     @include paragraph;
+    margin-bottom: 10px;
 }
 
 .display-1 {

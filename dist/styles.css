@@ -64,52 +64,89 @@ button:hover {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 3rem;
+  font-size: 2.75rem;
+  line-height: 1.15;
+}
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2.25rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+@media only screen and (min-width: 900px) {
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 
 h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.75rem;
+  line-height: 1.3;
 }
 
 h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 p {
   font-family: "Fira Sans", sans-serif;
   font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .display-1 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 6rem;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 900px) {
+  .display-1 {
+    font-size: 6rem;
+  }
 }
 
 .display-2 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 5.5rem;
+  font-size: 2.75rem;
+}
+@media only screen and (min-width: 900px) {
+  .display-2 {
+    font-size: 5.5rem;
+  }
 }
 
 .display-3 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 900px) {
+  .display-3 {
+    font-size: 4.5rem;
+  }
 }
 
 .display-4 {
   font-family: "Fira Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.25rem;
+}
+@media only screen and (min-width: 900px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
 }
 
 .lead {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .link {
@@ -141,12 +178,17 @@ p {
 }
 
 .navbar__container {
-  max-width: 1040px;
-  padding: 0 20px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+}
+@media only screen and (min-width: 900px) {
+  .navbar__container {
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }
 .navbar__logo {
   align-self: center;
@@ -166,6 +208,8 @@ p {
 }
 .navbar__nav.is-open {
   visibility: visible;
+  justify-content: center;
+  text-align: center;
 }
 @media only screen and (min-width: 900px) {
   .navbar__nav {
@@ -186,23 +230,32 @@ p {
 }
 .is-open .nav__item {
   padding: 0;
-  margin: 0;
-}
-.is-open .nav__item:first-child {
-  margin: 0;
-}
-.is-open .nav__item:last-child {
-  margin: 0;
+  margin: 0 0 35px;
+  font-size: 35px;
 }
 .nav__item {
-  padding: 20px 0;
-  margin: 0 12px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 19px;
 }
-.nav__item:first-child {
-  margin: 0 12px 0 0;
+@media only screen and (min-width: 900px) {
+  .nav__item:first-child {
+    margin: 0 12px 0 0;
+  }
+  .nav__item:last-child {
+    margin: 0 0 0 12px;
+  }
 }
-.nav__item:last-child {
-  margin: 0 0 0 12px;
+@media only screen and (min-width: 900px) {
+  .nav__item > a {
+    display: inline-flex;
+    padding: 20px 0;
+    margin: 0 12px;
+    border-bottom: 2px solid #fff;
+    transition: border-color 0.15s linear;
+  }
+  .nav__item > a:hover {
+    border-color: #191A1E;
+  }
 }
 
 .navbar-icon {
@@ -223,18 +276,32 @@ p {
   width: 100%;
   height: 1px;
   background-color: #191A1E;
+  transition: all 0.15s linear;
 }
 .navbar-icon__top-line {
   top: 7px;
 }
 .navbar-icon__middle-line {
   top: 14px;
+  opacity: 1;
 }
 .navbar-icon__bottom-line {
   top: 21px;
 }
-.navbar-icon.is-close {
+.navbar-icon.is-close-icon {
   z-index: 101;
+  position: fixed;
+  right: 20px;
+}
+.navbar-icon.is-close-icon .navbar-icon__top-line {
+  transform: rotate(45deg);
+}
+.navbar-icon.is-close-icon .navbar-icon__middle-line {
+  visibility: hidden;
+}
+.navbar-icon.is-close-icon .navbar-icon__bottom-line {
+  transform: rotate(-45deg);
+  top: 7px;
 }
 
 .section {
@@ -290,7 +357,12 @@ p {
 
 .hero {
   background-color: #F7F5EF;
-  padding: 120px 0;
+  padding: 50px 0 120px;
+}
+@media only screen and (min-width: 900px) {
+  .hero {
+    padding: 120px 0;
+  }
 }
 .hero__container {
   padding: 0 20px;
