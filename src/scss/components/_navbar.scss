@@ -59,7 +59,7 @@
 
     &__item {
         font-family: $font-fira;
-        font-size: 19px;
+        font-size: 18px;
 
         @include mq-for-desktop {
             &:first-child {
