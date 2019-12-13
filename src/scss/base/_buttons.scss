@@ -1,0 +1,21 @@
+.btn-primary {
+    font-size: .9rem;
+    color: $color-dark;
+    background-color: $color-accent;
+    border: 2px solid $color-accent;
+    padding: .75rem 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        color: $color-dark;
+        background-color: lighten($color-accent, 10%);
+        border-color: lighten($color-accent, 10%);
+    }
+
+    &--alt {
+        background-color: transparent;
+        border: 2px solid $color-accent;
+    }
+}

@@ -1,4 +1,5 @@
-$image-max-width: 200px;
+$image-max-width: 125px;
+$image-max-width-desktop: 200px;
 
 .section {
     position: relative;
@@ -36,10 +37,15 @@ $image-max-width: 200px;
     &__image {
         max-width: $image-max-width;
         width: 100%;
+
+        @include mq-for-desktop {
+            max-width: $image-max-width-desktop;
+        }
     }
 
     &__image-container {
-        order: 2;
+        order: 1;
+        margin: 0 auto 20px;
 
         @include mq-for-desktop {
             order: 0;
@@ -47,12 +53,30 @@ $image-max-width: 200px;
     }
 
     &__content {
-        order: 1;
+        order: 2;
         width: 100%;
 
         @include mq-for-desktop {
             order: 0;
-            width: calc(100% - (#{$image-max-width} + 40px));
+            width: calc(100% - (#{$image-max-width-desktop} + 100px));
+        }
+    }
+
+    &__ctas {
+        display: flex;
+        flex-direction: column;
+
+        @include mq-for-lg-mobile {
+            flex-direction: row;
+        }
+
+        > a:first-child,
+        > button:first-child {
+            margin: 25px 0;
+
+            @include mq-for-lg-mobile {
+                margin: 0 25px 0 0;
+            }
         }
     }
 }

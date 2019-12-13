@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin mq-for-lg-mobile {
+    @media only screen and (min-width: 400px) {
+        @content;
+    }
+}

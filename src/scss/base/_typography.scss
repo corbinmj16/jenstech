@@ -125,33 +125,3 @@ p {
 .lead {
     @include lead;
 }
-
-.link {
-    border-bottom: 1px solid $color-dark;
-    box-shadow: inset 0 -1px 0 0;
-    transition: all .25s ease-out;
-    color: $color-dark;
-
-    &:hover {
-        cursor: pointer;
-        box-shadow: inset 0 -1.75rem 0 0 $color-dark;
-        color: #fff;
-    }
-}
-
-.btn {
-    font-size: .9rem;
-    color: $color-dark;
-    background-color: $color-accent;
-    border-color: $color-accent;
-    padding: .75rem 1.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: all .15s ease-in-out;
-
-    &:hover {
-        color:#170f18;
-        background-color: lighten($color-accent, 10%);
-        border-color: lighten($color-accent, 10%);
-    }
-}
