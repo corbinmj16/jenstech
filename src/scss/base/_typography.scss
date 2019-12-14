@@ -106,6 +106,10 @@ p {
     margin-bottom: 10px;
 }
 
+li {
+    @include paragraph;
+}
+
 .display-1 {
     @include display-1;
 }

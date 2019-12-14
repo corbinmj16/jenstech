@@ -2,4 +2,13 @@
     background-color: $color-dark;
     padding: 50px 0;
     color: $color-white;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @include mq-for-desktop {
+            flex-direction: row;
+        }
+    }
 }
