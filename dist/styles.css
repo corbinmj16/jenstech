@@ -109,6 +109,16 @@ li {
   line-height: 1.5;
 }
 
+label {
+  font-family: "Playfair Display", serif;
+}
+
+input,
+textarea {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+}
+
 .display-1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 3rem;
@@ -437,7 +447,7 @@ li {
 }
 
 .process {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 .process__svg {
   transform: scaleY(-1) scaleX(-1);
@@ -456,6 +466,50 @@ li {
   .footer__container {
     flex-direction: row;
   }
+}
+.footer__form-container {
+  flex: 100%;
+  order: 2;
+  margin-top: 35px;
+}
+@media only screen and (min-width: 900px) {
+  .footer__form-container {
+    flex: 1;
+    order: 1;
+    padding-right: 25px;
+    margin-top: 0;
+  }
+}
+.footer__content {
+  flex: 100%;
+  order: 1;
+}
+@media only screen and (min-width: 900px) {
+  .footer__content {
+    flex: 1;
+    order: 2;
+  }
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-form__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.footer-form__row > label {
+  margin-bottom: 8px;
+}
+.footer-form__row > input {
+  height: 35px;
+  padding: 0 10px;
+}
+.footer-form__row > textarea {
+  padding: 10px;
+  resize: none;
 }
 
 .hero {

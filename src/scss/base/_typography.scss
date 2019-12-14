@@ -110,6 +110,16 @@ li {
     @include paragraph;
 }
 
+label {
+    font-family: $font-playfair;
+}
+
+input,
+textarea {
+    font-family: $font-fira;
+    font-size: 18px;
+}
+
 .display-1 {
     @include display-1;
 }

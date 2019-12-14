@@ -11,4 +11,52 @@
             flex-direction: row;
         }
     }
+
+    &__form-container {
+        flex: 100%;
+        order: 2;
+        margin-top: 35px;
+
+        @include mq-for-desktop {
+            flex: 1;
+            order: 1;
+            padding-right: 25px;
+            margin-top: 0;
+        }
+    }
+
+    &__content {
+        flex: 100%;
+        order: 1;
+
+        @include mq-for-desktop {
+            flex: 1;
+            order: 2;
+        }
+    }
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        > label {
+            margin-bottom: 8px;
+        }
+
+        > input {
+            height: 35px;
+            padding: 0 10px;
+        }
+
+        > textarea {
+            padding: 10px;
+            resize: none;
+        }
+    }
 }
