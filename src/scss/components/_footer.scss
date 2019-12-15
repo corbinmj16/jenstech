@@ -6,39 +6,46 @@
     &__container {
         display: flex;
         flex-direction: column;
-
-        @include mq-for-desktop {
-            flex-direction: row;
-        }
     }
 
-    &__form-container {
-        flex: 100%;
-        order: 2;
-        margin-top: 35px;
-
-        @include mq-for-desktop {
-            flex: 1;
-            order: 1;
-            padding-right: 25px;
-            margin-top: 0;
-        }
+    &__content,
+    &__title,
+    &__line {
+        margin-bottom: 25px;
     }
 
-    &__content {
-        flex: 100%;
-        order: 1;
+    &__title {
+        @include heading-1;
+    }
 
-        @include mq-for-desktop {
-            flex: 1;
-            order: 2;
-        }
+    &__line {
+        @include title-accent-line($color-white);
     }
 }
 
 .footer-form {
     display: flex;
     flex-direction: column;
+
+    &__split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include mq-for-desktop {
+            flex-direction: row;
+        }
+
+        .footer-form__row {
+            flex: 1;
+
+            &:first-child {
+                @include mq-for-desktop {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
 
     &__row {
         display: flex;
@@ -57,6 +64,7 @@
         > textarea {
             padding: 10px;
             resize: none;
+            max-height: 140px;
         }
     }
 }

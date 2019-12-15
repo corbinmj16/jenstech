@@ -27,8 +27,6 @@ $titles-margin-bottom: 20px;
     }
 
     &__line {
-        display: inline-block;
-        border: 3px solid $color-dark;
-        width: 25%;
+        @include title-accent-line($color-dark);
     }
 }

@@ -1,3 +1,9 @@
+/*
+    Media Queries
+*/
+/*
+    Helpers
+*/
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,600|Playfair+Display&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -118,6 +124,10 @@ textarea {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
 }
+input:focus,
+textarea:focus {
+  border-color: #A58861;
+}
 
 .display-1 {
   font-family: "Fira Sans", sans-serif;
@@ -166,6 +176,7 @@ textarea {
 }
 
 .btn-primary {
+  font-family: "Fira Sans", sans-serif;
   font-size: 0.9rem;
   color: #191A1E;
   background-color: #A58861;
@@ -462,38 +473,46 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 900px) {
-  .footer__container {
-    flex-direction: row;
-  }
+.footer__content, .footer__title, .footer__line {
+  margin-bottom: 25px;
 }
-.footer__form-container {
-  flex: 100%;
-  order: 2;
-  margin-top: 35px;
+.footer__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.75rem;
+  line-height: 1.15;
 }
 @media only screen and (min-width: 900px) {
-  .footer__form-container {
-    flex: 1;
-    order: 1;
-    padding-right: 25px;
-    margin-top: 0;
+  .footer__title {
+    font-size: 3rem;
   }
 }
-.footer__content {
-  flex: 100%;
-  order: 1;
-}
-@media only screen and (min-width: 900px) {
-  .footer__content {
-    flex: 1;
-    order: 2;
-  }
+.footer__line {
+  display: inline-block;
+  border: 3px solid #fff;
+  width: 25%;
 }
 
 .footer-form {
   display: flex;
   flex-direction: column;
+}
+.footer-form__split {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 900px) {
+  .footer-form__split {
+    flex-direction: row;
+  }
+}
+.footer-form__split .footer-form__row {
+  flex: 1;
+}
+@media only screen and (min-width: 900px) {
+  .footer-form__split .footer-form__row:first-child {
+    margin-right: 25px;
+  }
 }
 .footer-form__row {
   display: flex;
@@ -510,6 +529,7 @@ textarea {
 .footer-form__row > textarea {
   padding: 10px;
   resize: none;
+  max-height: 140px;
 }
 
 .hero {

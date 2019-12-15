@@ -118,6 +118,10 @@ input,
 textarea {
     font-family: $font-fira;
     font-size: 18px;
+
+    &:focus {
+        border-color: $color-accent;
+    }
 }
 
 .display-1 {
