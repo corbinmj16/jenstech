@@ -1,34 +1,47 @@
-const {task, watch, pipe, dest, src, series} = require('gulp');
+// Init modules
+const { src, dest, watch, pipe, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
+const jsConcat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
-const SCSS_INPUT = './source/scss/styles.scss';
-const CSS_OUTPUT = './source/css';
+// File path variables
+const files = {
+  scssPath: './source/_scss/**/*.scss',
+  cssPath: './source/css',
+  jsDevPath: './source/_js/**/*.js',
+  jsPublicPath: './source/js',
+};
 
-function scssWatch() {
-  return watch(SCSS_INPUT, () => {
-    task(css);
-  })
-  .on('change', (event) => {
-    console.log('changed file: ', event);
-  });
-}
 
-function css() {
-  return src(SCSS_INPUT)
+// Scss tasks
+function scssTask() {
+  return src('./source/_scss/styles.scss')
+    // put sourcemaps here if you need them
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest(CSS_OUTPUT));
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(dest(files.cssPath));
 }
 
-exports.watchStyles = series(scssWatch);
-exports.default = series(css);
+// JS tasks
+function jsTask() {
+  return src(files.jsDevPath)
+    .pipe(jsConcat('bundle.js'))
+    .pipe(uglify())
+    .pipe(dest(files.jsPublicPath));
+}
 
-// gulp.task('scss:watch', function() {
-//   return gulp
-//     // Watch input folder for changes
-//     // then run the 'scss' task
-//     .watch(SCSS_INPUT, 'scss')
-//     // Whent here is a change log it to the console
-//     .on('change', (event) => {
-//       console.log(event);
-//     });
-// });
+// Watch task
+function watchTask() {
+  watch(
+    [files.scssPath, files.jsDevPath],
+    parallel(scssTask, jsTask)
+  );
+}
+
+// Default task
+exports.default = series(
+  parallel(scssTask, jsTask),
+  watchTask
+);
