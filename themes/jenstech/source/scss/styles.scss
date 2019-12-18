@@ -1,11 +1,12 @@
-@import "./utils/index.scss";
-@import "./base/index.scss";
-@import "./components/index.scss";
+@import "utils/index.scss";
+@import "base/index.scss";
+@import "components/index.scss";
 
 main {
-    background: #fff;
+    background: red;
 }
 
 footer {
     background: lightgreen;
 }
+
