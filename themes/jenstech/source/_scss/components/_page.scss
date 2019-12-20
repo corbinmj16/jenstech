@@ -1,0 +1,25 @@
+.page {
+
+  &__container,
+  .page-header__container {
+    @include container-padding;
+  }
+
+  &__content {
+    margin: 50px 0;
+  }
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  background-color: $color-primary;
+
+  &__image {
+    width: 100px;
+    margin: 0 auto 25px;
+  }
+}

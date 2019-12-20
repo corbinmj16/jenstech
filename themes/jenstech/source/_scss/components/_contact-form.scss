@@ -1,0 +1,70 @@
+.contact {
+    background-color: $color-dark;
+    padding: 50px 0;
+    color: $color-white;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content,
+    &__title,
+    &__line {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        @include heading-1;
+    }
+
+    &__line {
+        @include title-accent-line($color-white);
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    &__split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include mq-for-desktop {
+            flex-direction: row;
+        }
+
+        .contact-form__row {
+            flex: 1;
+
+            &:first-child {
+                @include mq-for-desktop {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        > label {
+            margin-bottom: 8px;
+        }
+
+        > input {
+            height: 35px;
+            padding: 0 10px;
+        }
+
+        > textarea {
+            padding: 10px;
+            resize: none;
+            max-height: 140px;
+        }
+    }
+}

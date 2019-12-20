@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <%- open_graph() %>
     <%- css('css/styles.css') %>
     <title>Jenstech</title>
 </head>
 <body>
+    <%- partial('_partials/navigation') %>
+
     <%- body %>
+
+    <%- partial('_partials/footer') %>
 
     <script>
         const nav = document.getElementById('js-navbar-nav');
