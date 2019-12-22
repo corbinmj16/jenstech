@@ -50,14 +50,14 @@
     .is-open & {
         flex-direction: column;
 
-        &__item {
+        > li {
             padding: 0;
             margin: 0 0 35px;
             font-size: 35px;
         }
     }
 
-    &__item {
+    > li {
         font-family: $font-fira;
         font-size: 18px;
 

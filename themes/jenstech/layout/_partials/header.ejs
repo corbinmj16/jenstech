@@ -1,0 +1,23 @@
+<%
+    var logo = is_home() ? 'Jenstech' : '<a href="/">Jenstech</a>';
+%>
+<header class="navbar">
+    <div class="navbar__container">
+        <!-- <figure>
+            <img src="logo.svg" alt="Jenstech official logo" />
+        </figure> -->
+        <h3 class="navbar__logo logo">
+            <%- logo %>
+        </h3>
+        <button type="button" id="js-navbar-icon" class="navbar-icon">
+            <span class="navbar-icon__top-line"></span>
+            <span class="navbar-icon__middle-line"></span>
+            <span class="navbar-icon__bottom-line"></span>
+        </button>
+        <nav id="js-navbar-nav" class="navbar__nav">
+            <ul class="nav">
+                <%- partial('_partials/navigation') %>
+            </ul>
+        </nav>
+    </div>
+</header>

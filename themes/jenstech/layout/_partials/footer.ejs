@@ -1,6 +1,29 @@
+<%
+    var logo = is_home() ? 'Jenstech' : '<a href="/">Jenstech</a>';
+%>
 <footer class="footer">
     <div class="footer__container">
-        <p class="footer__copyright">
+        <div class="footer__logo">
+            <h3 class="logo">
+                <%- logo %>
+            </h3>
+            <p>A Charlotte, NC based web design and development company. Helping small businesses build an online presence.</p>
+        </div>
+        <div class="footer__nav">
+            <ul>
+                <%- partial('./navigation') %>
+            </ul>
+        </div>
+        <div class="footer__socials">
+            <ul>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>
             Copyright © <%- date(Date.now(), 'YYYY') %> Jenstech. All rights reserved
         </p>
     </div>
