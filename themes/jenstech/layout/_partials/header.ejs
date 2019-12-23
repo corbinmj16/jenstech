@@ -1,16 +1,20 @@
 <header class="navbar">
     <div class="navbar__container">
-        <h3 class="navbar__logo logo">
+        <div class="navbar__logo logo">
             <% if (is_home()) { %>
                 <%- image_tag(theme.logoBlack, { alt: 'Jenstech official logo' }) %>
-                Jenstech
+                <h3>Jenstech</h3>
             <% } else { %>
                 <a href="/">
                     <%- image_tag(theme.logoBlack, { alt: 'Jenstech official logo' }) %>
-                    Jenstech
                 </a>
+                <h3>
+                    <a href="/">
+                        Jenstech
+                    </a>
+                </h3>
             <% } %>
-        </h3>
+        </div>
         <button type="button" id="js-navbar-icon" class="navbar-icon">
             <span class="navbar-icon__top-line"></span>
             <span class="navbar-icon__middle-line"></span>

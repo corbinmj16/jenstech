@@ -10,12 +10,11 @@
         }
     }
 
-    &__logo,
-    &__logo > a {
+    &__logo {
         display: flex;
-        align-self: center;
+        align-items: center;
 
-        > img {
+        img {
             width: 35px;
             margin-right: 20px;
         }
