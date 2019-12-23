@@ -65,7 +65,7 @@
 
     > li {
         font-family: $font-fira;
-        font-size: 17px;
+        font-size: 16px;
 
         @include mq-for-desktop {
             &:first-child {
