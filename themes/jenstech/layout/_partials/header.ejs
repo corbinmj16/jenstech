@@ -1,13 +1,15 @@
-<%
-    var logo = is_home() ? 'Jenstech' : '<a href="/">Jenstech</a>';
-%>
 <header class="navbar">
     <div class="navbar__container">
-        <!-- <figure>
-            <img src="logo.svg" alt="Jenstech official logo" />
-        </figure> -->
         <h3 class="navbar__logo logo">
-            <%- logo %>
+            <% if (is_home()) { %>
+                <%- image_tag(theme.logoBlack, { alt: 'Jenstech official logo' }) %>
+                Jenstech
+            <% } else { %>
+                <a href="/">
+                    <%- image_tag(theme.logoBlack, { alt: 'Jenstech official logo' }) %>
+                    Jenstech
+                </a>
+            <% } %>
         </h3>
         <button type="button" id="js-navbar-icon" class="navbar-icon">
             <span class="navbar-icon__top-line"></span>
