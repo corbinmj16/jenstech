@@ -9,6 +9,7 @@
     <%- css('css/styles.css') %>
     <link rel="icon" type="image/png" href="<%- theme.favicon %>">
     <title>Jenstech</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/2df9c1014b.js" crossorigin="anonymous"></script>
 </head>
@@ -19,6 +20,17 @@
 
     <%- partial('_partials/footer') %>
 
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", function() {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
     <script>
         const nav = document.getElementById('js-navbar-nav');
         const menuIcon = document.getElementById('js-navbar-icon');
