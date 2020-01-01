@@ -20,6 +20,17 @@
     <%- partial('_partials/footer') %>
 
     <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", function(user) {
+            if (!user) {
+              window.netlifyIdentity.on("login", function() {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+    </script>
+    <script>
         const nav = document.getElementById('js-navbar-nav');
         const menuIcon = document.getElementById('js-navbar-icon');
         menuIcon.addEventListener('click', () => {
