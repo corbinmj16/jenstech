@@ -1,4 +1,5 @@
 ---
+menu_title: Process
 title: Our Process
 subtitle: SEO description
 image: 'images/process.svg'

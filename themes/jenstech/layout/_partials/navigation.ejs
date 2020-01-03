@@ -2,10 +2,23 @@
     var nav = site.data.nav;
 %>
 
-<% for(link in nav) { %>
+<% nav.forEach(function(page) { %>
     <li>
-        <a href="<%- nav[link] %>">
-            <%- link %>
+        <a href="<%- page.url %>">
+            <%- page.name %>
         </a>
+
+        <% if (page.sub_pages) { %> 
+            <ul>
+                <% page.sub_pages.forEach(function(subpage) { %>
+                    <li>
+                        <a href="<%- subpage.url %>">
+                            <%- subpage.name %>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } %>
     </li>
-<% } %>
+<% }); %>
+

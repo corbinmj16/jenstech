@@ -1,4 +1,19 @@
-Purpose: /purpose
-Services: /services
-Process: /process
-Contact: /contact
+- name: Purpose
+  url: /purpose
+
+- name: Services
+  url: /services
+  sub_pages:
+    - name: Web Design
+      url: /services/web-design
+    - name: SEO
+      url: /services/seo
+
+- name: Process
+  url: /process
+
+- name: Blog
+  url: /blog
+
+- name: Contact
+  url: /contact

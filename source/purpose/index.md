@@ -1,4 +1,5 @@
 ---
+menu_title: Purpose
 title: Our Purpose
 subtitle: Getting your business found online
 image: 'images/purpose.svg'

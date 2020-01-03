@@ -1,4 +1,5 @@
 ---
+menu_title: Services
 title: Our Services
 subtitle: SEO description
 image: 'images/services.svg'
