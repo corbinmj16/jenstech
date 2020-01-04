@@ -1,10 +1,6 @@
 ---
-menu_title: Process
 title: Our Process
 subtitle: SEO description
-image: 'images/process.svg'
+image: 'images/icon-process.svg'
 date: 2019-12-19 07:25:08
-keywords:
-    - jenstechs process
-    - another one
 ---

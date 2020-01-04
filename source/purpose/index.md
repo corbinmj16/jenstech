@@ -1,8 +1,7 @@
 ---
-menu_title: Purpose
 title: Our Purpose
 subtitle: Getting your business found online
-image: 'images/purpose.svg'
+image: 'images/icon-purpose.svg'
 date: 2019-12-17 06:42:24
 ---
 <h3>Get to the party</h3>

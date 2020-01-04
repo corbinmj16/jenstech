@@ -1,0 +1,17 @@
+<main class="page">
+    <header class="page-header">
+        <div class="page-header__container">
+            <% if (page.image) { %>
+            <figure>
+                <%- image_tag(page.image, { class: 'page-header__image', alt: page.subtitle }) %>
+            </figure>
+            <% } %>
+            <h2 class="page-header__title"><%- page.title %></h2>
+            <h1 class="page-header__subtitle"><%- page.subtitle %></h1>
+        </div>
+    </header>
+
+    <section class="page__container page__content">
+        <%- page.content %>
+    </section>
+</main>
