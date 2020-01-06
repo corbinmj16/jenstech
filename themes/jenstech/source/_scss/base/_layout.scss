@@ -3,3 +3,9 @@
     padding: 0 20px;
     margin: 0 auto;
 }
+
+@mixin content-padding {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+}

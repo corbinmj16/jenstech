@@ -3,15 +3,15 @@
 %>
 
 <% nav.forEach(function(page) { %>
-    <li>
+    <li class="nav__item">
         <a href="<%- page.url %>">
             <%- page.name %>
         </a>
 
         <% if (page.sub_pages) { %> 
-            <ul>
+            <ul class="sub-nav">
                 <% page.sub_pages.forEach(function(subpage) { %>
-                    <li>
+                    <li class="sub-nav__item">
                         <a href="<%- subpage.url %>">
                             <%- subpage.name %>
                         </a>

@@ -56,14 +56,14 @@
     .is-open & {
         flex-direction: column;
 
-        > li {
+        > .nav__item {
             padding: 0;
             margin: 0 0 35px;
             font-size: 35px;
         }
     }
 
-    > li {
+    &__item {
         font-family: $font-fira;
         font-size: 16px;
 
@@ -143,5 +143,18 @@
             transform: rotate(-45deg);
             top: 7px; // meet where the top line is positioned
         }
+    }
+}
+
+.sub-nav {
+    display: none;
+
+    @include mq-for-desktop {
+        display: none;
+        background-color: $color-white;
+        box-shadow: 0 2px 4px #BBB;
+    }
+
+    &__item {
     }
 }
