@@ -50,49 +50,6 @@
     }
 }
 
-.nav {
-    display: flex;
-
-    .is-open & {
-        flex-direction: column;
-
-        > .nav__item {
-            padding: 0;
-            margin: 0 0 35px;
-            font-size: 35px;
-        }
-    }
-
-    &__item {
-        font-family: $font-fira;
-        font-size: 16px;
-
-        @include mq-for-desktop {
-            &:first-child {
-                margin: 0 12px 0 0;
-            }
-
-            &:last-child {
-                margin: 0 0 0 12px;
-            }
-        }
-
-        > a {
-            @include mq-for-desktop {
-                display: inline-flex;
-                padding: 20px 0;
-                margin: 0 12px;
-                border-bottom: 2px solid $color-white;
-                transition: border-color .15s linear;
-        
-                &:hover {
-                    border-color: $color-dark;
-                }
-            }
-        }
-    }
-}
-
 .navbar-icon {
     position: relative;
     width: 30px;
@@ -146,6 +103,59 @@
     }
 }
 
+.nav {
+    display: flex;
+
+    .is-open & {
+        flex-direction: column;
+
+        > .nav__item {
+            padding: 0;
+            margin: 0 0 35px;
+            font-size: 35px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        font-family: $font-fira;
+        font-size: 16px;
+
+        @include mq-for-desktop {
+            &:first-child {
+                margin: 0 12px 0 0;
+            }
+
+            &:last-child {
+                margin: 0 0 0 12px;
+            }
+
+            &:hover {
+                > .sub-nav {
+                    display: block;
+                    position: absolute;
+                    min-width: 150px;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        > a {
+            @include mq-for-desktop {
+                display: inline-flex;
+                padding: 20px 0;
+                margin: 0 12px;
+                border-bottom: 2px solid $color-white;
+                transition: border-color .15s linear;
+        
+                &:hover {
+                    border-color: $color-dark;
+                }
+            }
+        }
+    }
+}
+
 .sub-nav {
     display: none;
 
@@ -156,5 +166,11 @@
     }
 
     &__item {
+        border-bottom: 1px solid $color-dark;
+        padding: 10px 0;
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 }
