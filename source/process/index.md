@@ -3,4 +3,4 @@ title: Our Process
 subtitle: SEO description
 image: 'images/icon-process.svg'
 ---
-Process content
+You have 1 question you want answered, "Can Jenstech help my business grow?"

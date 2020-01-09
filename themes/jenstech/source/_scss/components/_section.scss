@@ -8,6 +8,7 @@ $image-max-width-desktop: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
 
         @include mq-for-desktop {
             flex-direction: row;
@@ -26,12 +27,14 @@ $image-max-width-desktop: 200px;
     }
 
     &__title {
-        @include heading-2;
+        @include heading-1;
     }
 
     &__line {
         display: block;
-        border-top: 1px solid $color-dark;
+        max-width: 150px;
+        border-top: 2px solid $color-dark;
+        margin: 25px 0;
     }
 
     &__image {
@@ -58,7 +61,7 @@ $image-max-width-desktop: 200px;
 
         @include mq-for-desktop {
             order: 0;
-            width: calc(100% - (#{$image-max-width-desktop} + 100px));
+            width: calc(100% - (#{$image-max-width-desktop} + 200px));
         }
     }
 
@@ -79,6 +82,10 @@ $image-max-width-desktop: 200px;
             @include mq-for-lg-mobile {
                 flex: 50%;
                 margin-bottom: 20px;
+            }
+
+            a {
+                text-decoration: underline;
             }
         }
     }

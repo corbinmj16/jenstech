@@ -109,10 +109,19 @@
     .is-open & {
         flex-direction: column;
 
+        @include mq-for-desktop {
+            flex-direction: row;
+        }
+
         > .nav__item {
             padding: 0;
             margin: 0 0 35px;
             font-size: 35px;
+
+            @include mq-for-desktop {
+                margin: auto;
+                font-size: 16px;
+            }
         }
     }
 
@@ -122,20 +131,11 @@
         font-size: 16px;
 
         @include mq-for-desktop {
-            &:first-child {
-                margin: 0 12px 0 0;
-            }
-
-            &:last-child {
-                margin: 0 0 0 12px;
-            }
-
             &:hover {
                 > .sub-nav {
                     display: block;
                     position: absolute;
-                    min-width: 150px;
-                    padding: 0 20px;
+                    min-width: 170px;
                 }
             }
         }
@@ -166,11 +166,22 @@
     }
 
     &__item {
-        border-bottom: 1px solid $color-dark;
-        padding: 10px 0;
-
         &:last-child {
-            border-bottom: none;
+            > a {
+                border-bottom: none;
+            }
+        }
+
+        &:hover {
+            > a {
+                background-color: $color-primary;
+            }
+        }
+
+        > a {
+            position: relative;
+            display: block;
+            padding: 10px;
         }
     }
 }
