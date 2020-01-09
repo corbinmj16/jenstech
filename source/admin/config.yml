@@ -21,20 +21,24 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "source/_content/about.yml"
+      - label: "Our Process"
+        name: "process"
+        file: "source/_data/process.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Page Icon, name: page_icon, widget: image, default: "images/icon-process.svg"}
+          - {label: Content, name: content, widget: markdown}
+
+  # - label: "Site Navigation"
+  #   name: "site navigation"
+  #   files:
+  #     - label: "Main Navigation"
+  #       name: "main navigation"
+  #       file: "source/_data/navigation.yml"
+  #       fields:
+  #         - { label: Title, name: title, widget: string }
+  #         - { label: URL, name: url, widget: select, options: ["/"] }
