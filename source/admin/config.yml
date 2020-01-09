@@ -28,17 +28,8 @@ collections:
         name: "process"
         file: "source/_data/process.yml"
         fields:
+          - {label: Layout, name: layout, widget: "hidden", default: "page-layout"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Page Icon, name: page_icon, widget: image, default: "images/icon-process.svg"}
+          - {label: Page Icon, name: page_icon, widget: image, default: "/images/icon-process.svg"}
           - {label: Content, name: content, widget: markdown}
-
-  # - label: "Site Navigation"
-  #   name: "site navigation"
-  #   files:
-  #     - label: "Main Navigation"
-  #       name: "main navigation"
-  #       file: "source/_data/navigation.yml"
-  #       fields:
-  #         - { label: Title, name: title, widget: string }
-  #         - { label: URL, name: url, widget: select, options: ["/"] }
