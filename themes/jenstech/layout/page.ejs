@@ -1,2 +1,7 @@
-<%- partial('_layouts/page-layout') %>
+<% if (page.layout !== 'page') { %>
+    <%- partial('_pages/' + page.layout) %>
+<% } else { %>
+    <%- partial('_pages/default') %>
+<% } %>
+
 

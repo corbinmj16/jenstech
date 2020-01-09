@@ -28,7 +28,7 @@ collections:
         name: "process"
         file: "source/_data/process.yml"
         fields:
-          - {label: Layout, name: layout, widget: "hidden", default: "page-layout"}
+          - {label: Layout, name: layout, widget: "hidden", default: "process"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Page Icon, name: page_icon, widget: image, default: "/images/icon-process.svg"}
