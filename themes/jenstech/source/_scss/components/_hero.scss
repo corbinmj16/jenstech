@@ -20,6 +20,10 @@ $titles-margin-bottom: 20px;
         margin-bottom: $titles-margin-bottom;
     }
 
+    &__subtitle {
+        font-weight: normal !important;
+    }
+
     &__line {
         @include title-accent-line($color-dark);
     }
