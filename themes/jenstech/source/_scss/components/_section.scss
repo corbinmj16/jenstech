@@ -68,8 +68,8 @@ $image-max-width-desktop: 200px;
     &__list {
         display: flex;
         flex-direction: column;
-        list-style-type: circle;
-        padding-left: 15px;
+        list-style-type: none;
+        padding: 0;
         margin-top: 20px;
 
         @include mq-for-lg-mobile {
@@ -79,13 +79,15 @@ $image-max-width-desktop: 200px;
         }
 
         li {
+            border: 2px solid $color-accent;
+            padding: 7px 10px;
+
             @include mq-for-lg-mobile {
-                flex: 50%;
                 margin-bottom: 20px;
             }
 
             a {
-                text-decoration: underline;
+                color: $color-accent;
             }
         }
     }

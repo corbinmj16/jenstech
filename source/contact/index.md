@@ -1,5 +1,5 @@
 ---
 title: Let's talk
-subtitle: SEO description
+subtitle:
 image: 'images/icon-contact.svg'
 ---

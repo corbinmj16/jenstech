@@ -1,8 +1,12 @@
 ---
 title: Our Purpose
-subtitle: Getting your business found online
+subtitle: Build a digital presence
 image: 'images/icon-purpose.svg'
 ---
+<p class="lead">We can help your customers find you</p>
+
 It's simple, a business helps their customers solve problems. That means your business is the solution. Is your business' solution easy to find online? Is it online at all?
 
-Jenstech partners with businesses, in the Charlotte, NC area, to create a digital presence. This helps your business easily be found when your customers are trying to find you. We know we can provide so much value you'll end up saying "How did we ever do this without you?".
+Jenstech consists of a husband and wife team that has a combined 16 years of architecting software solutions. We want to bring our passion for digital solutions to your business.
+
+<a class="btn-primary btn-primary--alt" href="/services">Check out our services</a>

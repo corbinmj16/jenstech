@@ -4,7 +4,7 @@
     align-items: center;
     font-family: $font-fira;
     font-size: .9rem;
-    color: $color-dark;
+    color: $color-white;
     background-color: $color-accent;
     border: 2px solid $color-accent;
     padding: .75rem 1.5rem;
@@ -14,13 +14,18 @@
     transition: all .15s ease-in-out;
 
     &:hover {
-        color: $color-dark;
+        color: $color-white;
         background-color: lighten($color-accent, 10%);
         border-color: lighten($color-accent, 10%);
     }
 
     &--alt {
+        color: $color-dark;
         background-color: transparent;
         border: 2px solid $color-accent;
+
+        &:hover {
+            color: $color-dark;
+        }
     }
 }

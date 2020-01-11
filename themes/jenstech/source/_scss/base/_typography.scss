@@ -71,8 +71,9 @@ $font-logo: 'Poiret One', cursive;
 }
 
 @mixin lead {
-    font-family: $font-playfair;
-    font-size: 1.5rem;
+    font-family: $font-fira;
+    font-size: 1.35rem;
+    font-weight: bold;
     line-height: 1.5;
 }
 
