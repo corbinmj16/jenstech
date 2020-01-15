@@ -7,6 +7,8 @@ image: 'images/icon-purpose.svg'
 
 It's simple, a business helps their customers solve problems. That means your business is the solution. Is your business' solution easy to find online? Is it online at all?
 
-Jenstech consists of a husband and wife team that has a combined 16 years of architecting software solutions. We want to bring our passion for digital solutions to your business.
+We intend to teach you and help you implement the things you need in your digital presence. We don't intend to come into your business, change a bunch of things and then leave while your wondering what the heck just happened.
+
+We want to be an extension of your business. We want to help you grow.
 
 <a class="btn-primary btn-primary--alt" href="/services">Check out our services</a>

@@ -72,22 +72,18 @@ $image-max-width-desktop: 200px;
         padding: 0;
         margin-top: 20px;
 
-        @include mq-for-lg-mobile {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
         li {
-            border: 2px solid $color-accent;
-            padding: 7px 10px;
-
-            @include mq-for-lg-mobile {
-                margin-bottom: 20px;
-            }
+            margin-bottom: 25px;
 
             a {
                 color: $color-accent;
+                border-bottom: 2px solid $color-accent;
+                transition: border .1s linear;
+
+                &:hover {
+                    border-bottom: 4px solid lighten($color-accent, 10%);
+                    color: lighten($color-accent, 10%);
+                }
             }
         }
     }

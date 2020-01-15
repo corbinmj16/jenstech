@@ -4,14 +4,14 @@
 - name: Services
   url: /services
   sub_pages:
-    - name: Web Development
+    - name: Website development
       url: /services/web-development
-    - name: Web Design
+    - name: Website design
       url: /services/web-design
-    - name: SEO
+    - name: Search engine optimization
       url: /services/seo
-    - name: SEO Audits
-      url: /services/seo-audits
+    - name: Search engine marketing
+      url: /services/search-engine-marketing
 
 - name: Process
   url: /process

@@ -4,7 +4,7 @@
             <h1 class="hero__title display-2">Get your business noticed online</h1>
             <hr class="hero__line">
             <h2 class="hero__subtitle lead">We build professionally optimized websites that will bring your customers to you.</h2>
-            <button class="btn-primary">Let's talk</button>
+            <a href="/contact" class="btn-primary">Let's talk</a>
         </div>
     </section>
 
@@ -17,7 +17,7 @@
                 <hr class="section__line">
                 <p>Jenstech partners with businesses in the greater Charlotte, NC area to create a digital presence. Specifically, helping your customers find you.</p>
                 <div class="section__ctas">
-                    <button type="button" class="btn-primary">Get a presence</button>
+                    <a href="/contact" class="btn-primary">Get a presence</a>
                     <a class="btn-primary btn-primary--alt" href="/purpose">Learn more</a>
                 </div>
             </div>
@@ -43,27 +43,16 @@
                 <hr class="section__line">
                 <p>We only offer services that will provide value. The services below will help your business' digital presence. No fluff.</p>
                 <ul class="section__list">
-                    <li>
-                        <a href="/services/web-development">Website development</a>
-                    </li>
-                    <li>
-                        <a href="/services/web-design">Website design</a>
-                    </li>
-                    <li>
-                        <a href="/services/seo">Search Engine Optimization (SEO)</a>
-                    </li>
-                    <li>
-                        <a href="/services/seo-audits">SEO Audits</a>
-                    </li>
-                    <li>
-                        Google Analytics
-                    </li>
-                    <li>
-                        Organic Marking Strategy
-                    </li>
+                    <% site.data.services.forEach(function(service) { %>
+                        <li>
+                            <a href="<%- service.url %>">
+                                <%- service.name %>
+                            </a>
+                        </li>
+                    <% }) %>
                 </ul>
                 <div class="section__ctas">
-                    <button class="btn-primary" type="button">I'm sold</button>
+                    <a href="/contact" class="btn-primary">I'm sold</a>
                     <a class="btn-primary btn-primary--alt" href="/services">Learn more</a>
                 </div>
             </div>
@@ -78,9 +67,9 @@
                 <h2 class="section__title">Our Process</h2>
                 <hr class="section__line">
                 <p>Let's sit down and discuss the things that are going right, wrong, missing, and what is confusing about your business. Shedding light on these 4 areas will help our team lay the foundation to optimize your business.</p>
-                <p>Give us a call or fill out the form below.</p>
+                <p>Call us now or fill out the form below.</p>
                 <div class="section__ctas">
-                    <button class="btn-primary" type="button">Call Now</button>
+                    <a href="tel:5635087662" class="btn-primary">Call Now</a>
                     <a href="/process" class="btn-primary btn-primary--alt">Learn More</a>
                 </div>
             </div>
