@@ -111,14 +111,16 @@
 
   &__copyright {
     order: 2;
+    color: $color-white;
+    margin: 0;
+    font-size: 14px;
 
     @include mq-for-desktop {
       order: 1;
     }
+  }
 
-    > p {
-      color: $color-white;
-      margin: 0;
-    }
+  &__credits {
+    font-size: 12px;
   }
 }

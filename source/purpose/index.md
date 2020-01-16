@@ -3,7 +3,7 @@ title: Our Purpose
 subtitle: Build a digital presence
 image: 'images/icon-purpose.svg'
 ---
-<p class="lead">We can help your customers find you</p>
+<h3 class="lead">We can help your customers find you</h3>
 
 It's simple, a business helps their customers solve problems. That means your business is the solution. Is your business' solution easy to find online? Is it online at all?
 
