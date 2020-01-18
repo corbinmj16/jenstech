@@ -1,14 +1,18 @@
 ---
 title: Web Development
-subtitle: What is web development?
+subtitle: A custom website built for your business' custom needs
 image: 'images/icon-web-development.svg'
 ---
-<p class="lead">How the website looks and functions</p>
+<p class="lead">The web development world can get complex quickly, so we keep things simple</p>
 
-In the general public "web development" and "web design" are used interchangeably. However these two terms have different meanings.
+We want to empower you to grow your business. Your website needs to be easy for you to use and easy for your customers to find you.
 
-<p class="lead">Let's focus on web development</p>
+<p class="lead">Our web development team provides:</p>
 
-Web development is the process of coding the website design using HTML, CSS, Javascript, or any other web language. More simply put, it's how the website looks. Just know those 3 are the foundational languages to develop a website. 
-
-Web development is also setting up the architecture of the website. This is the more complex part of developing a website. The architecture would be classified as the hosting, database or
+- Content management system (CMS)
+- Mobile responsive website
+- Search engine optimized website
+- Google Analytics
+- Americans with Disabilities Act (ADA) compliant website
+- Blog ready
+- E-commerce
