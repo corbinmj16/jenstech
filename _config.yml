@@ -100,3 +100,8 @@ theme: jenstech
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+sitemap:
+    path: sitemap.xml
+    tag: false
+    category: false
