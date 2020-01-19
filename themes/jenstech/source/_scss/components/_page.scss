@@ -33,6 +33,12 @@ $titles-margin-bottom: 20px;
     @include title-accent-line($color-dark);
     margin: 25px 0;
   }
+
+  &__to-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
 }
 
 .page-header {
