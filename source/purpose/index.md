@@ -1,6 +1,6 @@
 ---
 title: Our Purpose
-subtitle: Build a digital presence
+subtitle: Build you a digital presence
 image: 'images/icon-purpose.svg'
 ---
 <h3 class="lead">We can help your customers find you</h3>
@@ -11,4 +11,4 @@ We intend to teach you and help you implement the things you need in your digita
 
 We want to be an extension of your business. We want to help you grow.
 
-<a class="btn-primary btn-primary--alt" href="/services">Check out our services</a>
+<a class="btn-primary" href="/services">Check out our services</a>
