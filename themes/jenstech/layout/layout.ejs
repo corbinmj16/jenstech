@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <%- open_graph() %>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <%- open_graph({
+      title: page.title,
+      description: is_home() ? config.description : page.meta_description,
+    }) %>
+    <% if (is_home()) { %>
+      <title>Jenstech | Web design and development company from Charlotte, NC</title>
+    <% } else { %>
+      <title>Jenstech | <%- page.title %></title>
+    <% } %>
+    <!-- links -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600|Playfair+Display|Poiret+One&display=swap" rel="stylesheet">
     <%- css('css/styles.css') %>
     <link rel="icon" type="image/png" href="<%- theme.favicon %>">
-    <title>Jenstech</title>
+    <!-- scripts -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/2df9c1014b.js" crossorigin="anonymous"></script>
 </head>
 <body>

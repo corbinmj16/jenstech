@@ -1,4 +1,5 @@
 ---
+meta_description: Jenstech will help efficently spend your marketing budget on search engine marketing.
 title: Search Engine Marketing (SEM)
 subtitle: Pay to play
 image: 'images/icon-web-design.svg'

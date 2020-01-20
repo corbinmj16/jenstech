@@ -1,4 +1,5 @@
 ---
+meta_description: Jenstech builds websites that are search engine optimized to rank you in search results.
 title: Search Engine Optimization (SEO)
 subtitle: Your customers can find you
 image: 'images/icon-web-design.svg'

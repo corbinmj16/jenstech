@@ -1,4 +1,5 @@
 ---
+meta_description: At Jenstech we want to provide value towards achieving your business goals. No hourly billing!
 title: Our Process
 subtitle: Dialing it in
 image: 'images/icon-process.svg'

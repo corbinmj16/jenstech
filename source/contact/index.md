@@ -1,4 +1,5 @@
 ---
+meta_description: We would enjoy sitting down with you and figuring out how we can help.
 title: Let's talk
 subtitle: Are we a good fit?
 image: 'images/icon-contact.svg'

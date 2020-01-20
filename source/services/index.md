@@ -1,4 +1,5 @@
 ---
+meta_description: Jenstech provides website design, development, search engine optimization and search engine marketing.
 title: Our Services
 subtitle: Building blocks for your foundation
 image: 'images/icon-services.svg'

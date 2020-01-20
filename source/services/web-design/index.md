@@ -1,4 +1,5 @@
 ---
+meta_description: Jenstech will design your business a professional website.
 title: Web Design
 subtitle: Professionally designed websites
 image: 'images/icon-web-design.svg'

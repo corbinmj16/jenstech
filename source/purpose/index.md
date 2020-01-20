@@ -1,4 +1,5 @@
 ---
+meta_description: Jenstech's purpose is to build your business' digital presence.
 title: Our Purpose
 subtitle: Build you a digital presence
 image: 'images/icon-purpose.svg'

@@ -5,21 +5,21 @@
 # Site
 title: Jenstech
 subtitle: ''
-description: ''
+description: 'Jenstech partners with businesses in the greater Charlotte, NC area to create a digital presence. Specifically, helping your customers find you.'
 keywords:
-author: Corbin Jensen
+author: Jenstech
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://jenstech.co
 root: /
 permalink: blog/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
