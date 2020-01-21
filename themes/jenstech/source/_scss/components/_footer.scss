@@ -113,7 +113,8 @@
     order: 2;
     color: $color-white;
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
+    text-align: center;
 
     @include mq-for-desktop {
       order: 1;
@@ -121,6 +122,6 @@
   }
 
   &__credits {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
