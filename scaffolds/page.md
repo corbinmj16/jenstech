@@ -1,4 +1,6 @@
 ---
+meta_description: {{ meta }}
 title: {{ title }}
-date: {{ date }}
+subtitle: {{ subtitle }}
+image: {{ image }}
 ---

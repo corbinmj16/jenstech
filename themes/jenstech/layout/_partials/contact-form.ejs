@@ -6,7 +6,19 @@
             <p>Tell us a little about your business so we don't have a blind date situation.</p>
         </div>
 
-        <form data-netlify="true" name="general-contact" method="POST" class="contact-form">
+        <form
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            name="general-contact"
+            method="POST"
+            action="/thankyou/index.html"
+            class="contact-form">
+            <p class="contact-form__hidden">
+                <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+                </label>
+            </p>
+
             <div class="contact-form__split">
                 <div class="contact-form__row">
                     <label for="name">Name</label>
