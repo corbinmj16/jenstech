@@ -1,0 +1,53 @@
+.post {
+    &__image {
+        @include container-padding;
+        position: relative;
+        max-height: 400px;
+        overflow: hidden;
+
+        > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__container {
+        @include container-padding;
+        max-width: 950px;
+        margin: 25px auto;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        h3 {}
+
+        p {}
+
+        img {
+            margin: 0 auto 10px;
+        }
+    }
+}
+
+.post-header {
+    padding: 25px 0;
+    background-color: $color-primary;
+
+    &__container {
+        @include container-padding;
+        text-align: center;
+    }
+
+    &__title {
+        @include heading-2;
+        margin-bottom: 10px;
+    }
+
+    &__date {
+        margin: 0;
+    }
+}

@@ -70,6 +70,15 @@ $font-logo: 'Poiret One', cursive;
     line-height: 1.4;
 }
 
+@mixin subtitle {
+    font-size: 2.3rem;
+    line-height: 1.15;
+
+    @include mq-for-desktop {
+        font-size: 3rem;
+    }
+}
+
 @mixin lead {
     font-family: $font-fira;
     font-size: 1.35rem;
